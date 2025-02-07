@@ -1,6 +1,6 @@
 # Quantum Oracle Modules
 
-This repository contains implementations of quantum oracles used in quantum algorithms, specifically for **Deutsch-Josza** and **Bernstein-Vazirani** algorithms, implemented using **Qiskit**.
+This repository contains implementations of quantum oracles used in quantum algorithms, implemented using **Qiskit**.
 
 ## Features
 
