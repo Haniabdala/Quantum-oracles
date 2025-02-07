@@ -19,6 +19,7 @@ pip install qiskit
 
 To use the quantum oracles, you can import them like so:
 ```bash
-import Deutsch_Josza_Oracle
-import Bernstein_Vazirani_Oracle
+import module
+module.oracle(parameters)
 ```
+
