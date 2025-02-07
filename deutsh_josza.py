@@ -2,7 +2,7 @@ import qiskit
 import random
 from qiskit.circuit.library import MCXGate
 
-def deutsh_josza_oracle(n:int,qc:qiskit.QuantumCircuit,aux:qiskit.QuantumRegister):
+def oracle(n:int,qc:qiskit.QuantumCircuit,aux:qiskit.QuantumRegister):
 
     # Define the different oracles types
 
