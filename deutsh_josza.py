@@ -3,6 +3,22 @@ import random
 from qiskit.circuit.library import MCXGate
 
 def oracle(n:int,qc:qiskit.QuantumCircuit,aux:qiskit.QuantumRegister):
+    
+    """
+    Applies the Deutsch-Josza oracle to the given quantum circuit.
+
+    Parameters:
+        n (int): The number of qubits in the quantum circuit.
+        qc (QuantumCircuit): The quantum circuit where the oracle will be applied.
+        aux (QuantumRegister): The auxiliary quantum register (if any).
+
+    Returns:
+        None: The function modifies the provided quantum circuit in place.
+    
+    Usage:
+        import deutsh_josza
+        deutsh_josza.oracle(n, qc, aux)
+    """
 
     # Define the different oracles types
 
@@ -28,4 +44,6 @@ def oracle(n:int,qc:qiskit.QuantumCircuit,aux:qiskit.QuantumRegister):
             qc.append(MCXGate(1, ctrl_state='0'), [i, aux]) 
 
     qc.barrier()
+    
+
     
