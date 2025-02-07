@@ -43,6 +43,7 @@ def oracle(n:int,qc:qiskit.QuantumCircuit,aux:qiskit.QuantumRegister):
         for i in range(len(qr)):
             qc.append(MCXGate(1, ctrl_state='0'), [i, aux]) 
 
+    # Optional barrier for visual clarity
     qc.barrier()
     
 
